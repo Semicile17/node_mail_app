@@ -20,6 +20,7 @@ const sendMail = async (title,body,email)=>{
             html: newsletterHTML
           };
           const sentStatus = await transporter.sendMail(mailOptions);
+          
           return sentStatus ;
     }catch(err){
         return err;
